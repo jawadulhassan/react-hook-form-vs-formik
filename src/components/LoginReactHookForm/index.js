@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-export default function LoginForm({ login }) {
+export default function LoginReactHookForm({ login }) {
   const {
     register,
     handleSubmit,
@@ -10,9 +10,9 @@ export default function LoginForm({ login }) {
   } = useForm();
 
   const onSubmit = async (data) => {
-    alert(`Login: ${data.email}, password: ${data.password}`);
-    await login(data.email, data.password);
+    alert(JSON.stringify(data, null, 2));
     reset();
+    await login(data.email, data.password);
   };
 
   return (

@@ -1,14 +1,26 @@
-import LoginForm from "./components/LoginReactHookForm";
+import LoginFormik from "./components/LoginFormik";
+import LoginReactHookForm from "./components/LoginReactHookForm";
 
 function App() {
-  // return <h1>Hello World!</h1>;
+  // return (
+  //   <main>
+  //     <section>
+  //       <LoginFormik />
+  //     </section>
+  //   </main>
+  // );
+
+  // Using Formik
+
   return (
     <main>
       <section>
-        <LoginForm />
+        <LoginReactHookForm />
       </section>
     </main>
   );
+
+  // Using ReactHookForm
 }
 
 export default App;
