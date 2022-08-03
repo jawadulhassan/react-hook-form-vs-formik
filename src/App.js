@@ -2,6 +2,7 @@ import LoginFormik from "./components/LoginFormik";
 import LoginReactHookForm from "./components/LoginReactHookForm";
 
 function App() {
+  // Using Formik
   // return (
   //   <main>
   //     <section>
@@ -10,8 +11,7 @@ function App() {
   //   </main>
   // );
 
-  // Using Formik
-
+  // Using ReactHookForm
   return (
     <main>
       <section>
@@ -19,8 +19,6 @@ function App() {
       </section>
     </main>
   );
-
-  // Using ReactHookForm
 }
 
 export default App;
